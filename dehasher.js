@@ -1,6 +1,9 @@
 var crypto = require('crypto');
 const fs = require('fs');
 
+var start = "a" // edit if you saved latest string so it can start from your saved string.
+var end = "zzzzzzz" // edit if you want to go further than that.
+
 const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
@@ -24,15 +27,12 @@ function generate(perm, type, hash) {
         //}) - Use this only if you want to save the last string combo after closing program. (slows process a lot)
     //}
 
-    //console.log(perm + " : " + hashValue)
-
-    // ^ You can print out each hash but it will slow down the program a lot.
+    //console.log(perm + " : " + hashValue) - You can print out each hash but it will slow down the program a lot.
 }
 
 function looping(type, hash) {
-    // edit "a" if you saved latest string so it can start from your saved string. Also edit "zzzzzz" if you want to go further than that.
-    for(i=parseInt("a", 36); i++<=parseInt("zzzzzz", 36);
-
+    for(i=parseInt(start, 36); i++<=parseInt(end, 36);
+        
     generate(i.toString(36), type, hash));
 }
 
