@@ -1,5 +1,5 @@
 # Hash-Dehasher
-A program to find the real string for your hash. MD5, SHA256, any really. Works really fast, gets to the "aaaa" combo in about 1 second (on a bad pc, with youtube running in the background).
+A simple program to find the real string for your hash. MD5, SHA256, any really. Works really fast, gets to the "aaaa" combo in about 1 second (on a bad pc, with youtube running in the background).
 
 # FLAWS
 
