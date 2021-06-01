@@ -12,6 +12,7 @@ const readline = require('readline').createInterface({
 function generate(perm, type, hash) {
     var hashValue = crypto.createHash(type).update(perm).digest("hex")
     var myString = "Hash: " + hash + "\n\nDehashed string = " + perm
+    var failString = "Failed to find the string for '" + hash + "'\n\nEnded at: " + perm + "\n\nSuggestion: Increase the length of 'end' inside the code."
 
     if(hashValue.toString() == hash)
     {
@@ -21,10 +22,17 @@ function generate(perm, type, hash) {
         console.log("")
         console.log("SUCCESS! CHECK DEHASHED.TXT")
         process.exit()
-    } // else {
+    } else if(perm == end) {
+        fs.writeFileSync('FAIL.txt', failString, (err) => {  
+            if (err) throw err; 
+        })
+        console.log("")
+        console.log("FAIL! COULD NOT FIND YOUR HASH!")
+        process.exit()
+    }// else {
         //fs.writeFileSync('last.txt', 'Last combo: ' + perm, (err) => {  
           //  if (err) throw err; 
-        //}) - Use this only if you want to save the last string combo after closing program. (slows process a lot)
+        //}) - Add this only if you want to save the last string combo after closing program. (slows process a lot)
     //}
 
     //console.log(perm + " : " + hashValue) - You can print out each hash but it will slow down the program a lot.
