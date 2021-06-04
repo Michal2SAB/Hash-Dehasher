@@ -11,7 +11,7 @@ A simple program to find the real string for your hash. MD5, SHA256, any really.
 Just install node.js and you're good.
 
 # WANNA TEST IT?
-If you want to test if this program is really working, generate a hash from a random string like "aaa" for example  and paste that hash onto the program. It will create a file called "Dehashed.txt" in your folder with the info.
+If you want to test if this program is really working, generate a hash from a random string like "aaa" for example  and paste that hash onto the program. It will find your hash and create a file called "Dehashed.txt" in your folder with the info.
 
 You can generate hashes on sites such as this: https://passwordsgenerator.net/md5-hash-generator/
 
