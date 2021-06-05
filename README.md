@@ -4,7 +4,7 @@ A simple program to find the real string for your hash. MD5, SHA256, any really.
 # FLAWS
 
 - Does not check uppercase strings, only lowercase.
-- No special symbols, just alphabeat letters from a-z and numbers from 0-9.
+- No special symbols, just alphabet letters from a-z and numbers from 0-9.
 
 # REQUIREMENTS
 
