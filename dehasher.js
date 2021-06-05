@@ -35,7 +35,8 @@ function generate(perm, type, hash) {
         //}) - Add this only if you want to save the last string combo after closing program. (slows process a lot)
     //}
 
-    //console.log(perm + " : " + hashValue) - You can print out each hash but it will slow down the program a lot.
+    //console.log(perm + " : " + hashValue) - You can print out each hash but it will slow down the program a lot. 
+                                           // To be specific it will be around 31x times slower.
 }
 
 function looping(type, hash) {
